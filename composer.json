@@ -18,8 +18,8 @@
   },
   "autoload": {
     "psr-4": {
-      "ValueObjects\\": "src",
-      "ValueObjectsTest\\": "test"
+      "ValueObjects\\": "src/",
+      "ValueObjectsTest\\": "test/"
     }
   },
   "scripts": {
