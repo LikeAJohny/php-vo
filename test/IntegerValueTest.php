@@ -1,9 +1,9 @@
 <?php
 
-namespace ValueObjectsTest;
+namespace LikeAJohny\ValueObjectsTest;
 
 use PHPUnit\Framework\TestCase;
-use ValueObjects\IntegerValue;
+use LikeAJohny\ValueObjects\IntegerValue;
 
 class IntegerValueTest extends TestCase
 {

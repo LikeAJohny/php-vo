@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ValueObjects;
+namespace LikeAJohny\ValueObjects;
 
 abstract class FloatValue
 {

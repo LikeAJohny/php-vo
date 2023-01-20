@@ -1,9 +1,9 @@
 <?php
 
-namespace ValueObjectsTest;
+namespace LikeAJohny\ValueObjectsTest;
 
 use PHPUnit\Framework\TestCase;
-use ValueObjects\FloatValue;
+use LikeAJohny\ValueObjects\FloatValue;
 
 class FloatValueTest extends TestCase
 {
