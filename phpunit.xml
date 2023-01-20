@@ -1,0 +1,5 @@
+<testsuites>
+    <testsuite name="value-objects">
+        <directory>test</directory>
+    </testsuite>
+</testsuites>
