@@ -1,6 +1,6 @@
 {
   "name": "likeajohny/value-objects",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "A generic value objects approach.",
   "authors": [
     {
@@ -23,6 +23,7 @@
     }
   },
   "scripts": {
+    "dump": "composer dump-autoload",
     "test": "vendor/bin/phpunit --testdox --color=always"
   }
 }
