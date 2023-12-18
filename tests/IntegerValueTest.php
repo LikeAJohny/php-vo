@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpVoTest;
+namespace PhpVoTests;
 
 use PHPUnit\Framework\TestCase;
 use PhpVo\IntegerValue;
