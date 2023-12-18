@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace LikeAJohny\ValueObjects;
 
 use InvalidArgumentException;
+use Webmozart\Assert\Assert;
 
 class UrlValue extends StringValue
 {
