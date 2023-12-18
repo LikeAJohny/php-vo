@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LikeAJohny\ValueObjects;
+namespace PhpVo;
 
 use Webmozart\Assert\Assert;
 

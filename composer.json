@@ -18,8 +18,8 @@
   },
   "autoload": {
     "psr-4": {
-      "LikeAJohny\\ValueObjects\\": "src/",
-      "LikeAJohny\\ValueObjectsTest\\": "test/"
+      "PhpVo\\": "src/",
+      "PhpVoTests\\": "test/"
     }
   },
   "scripts": {

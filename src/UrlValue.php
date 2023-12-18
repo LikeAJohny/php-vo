@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LikeAJohny\ValueObjects;
+namespace PhpVo;
 
 use InvalidArgumentException;
 use Webmozart\Assert\Assert;

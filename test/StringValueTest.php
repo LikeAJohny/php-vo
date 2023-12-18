@@ -1,9 +1,9 @@
 <?php
 
-namespace LikeAJohny\ValueObjectsTest;
+namespace PhpVoTest;
 
 use PHPUnit\Framework\TestCase;
-use LikeAJohny\ValueObjects\StringValue;
+use PhpVo\StringValue;
 
 class StringValueTest extends TestCase
 {
