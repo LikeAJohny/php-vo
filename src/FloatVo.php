@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace PhpVo;
 
-abstract class FloatValue
+abstract class FloatVo
 {
-    use FloatValueTrait;
+    use FloatVoTrait;
 
     public function __construct(protected readonly float $value)
     {

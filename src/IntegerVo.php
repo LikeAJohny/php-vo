@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace PhpVo;
 
-abstract class IntegerValue
+abstract class IntegerVo
 {
-    use IntegerValueTrait;
+    use IntegerVoTrait;
 
     public function __construct(protected readonly int $value)
     {

@@ -3,9 +3,9 @@
 namespace PhpVoTests;
 
 use PHPUnit\Framework\TestCase;
-use PhpVo\StringValue;
+use PhpVo\StringVo;
 
-class StringValueTest extends TestCase
+class StringVoTest extends TestCase
 {
     public function testLeavesInitialStringValueUntouched(): void
     {
@@ -45,8 +45,13 @@ class StringValueTest extends TestCase
         $this->assertTrue($stringValue->empty());
     }
 
-    private function stringValue(string $value): StringValue
+    private function stringValue(string $value): StringVo
     {
-        return $this->getMockForAbstractClass(StringValue::class, [$value]);
+        return new class($value) extends StringVo
+        {
+            protected function validate(string $value): void
+            {
+            }
+        };
     }
 }

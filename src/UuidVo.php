@@ -6,7 +6,7 @@ namespace PhpVo;
 
 use Webmozart\Assert\Assert;
 
-class UuidValue extends StringValue
+class UuidVo extends StringVo
 {
     function validate(string $value): void
     {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PhpVo;
 
-trait IntegerValueTrait
+trait IntegerVoTrait
 {
     protected readonly int $value;
 

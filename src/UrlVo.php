@@ -7,7 +7,7 @@ namespace PhpVo;
 use InvalidArgumentException;
 use Webmozart\Assert\Assert;
 
-class UrlValue extends StringValue
+class UrlVo extends StringVo
 {
     protected function validate(string $value): void
     {

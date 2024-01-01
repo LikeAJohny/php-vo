@@ -3,9 +3,9 @@
 namespace PhpVoTests;
 
 use PHPUnit\Framework\TestCase;
-use PhpVo\FloatValue;
+use PhpVo\FloatVo;
 
-class FloatValueTest extends TestCase
+class FloatVoTest extends TestCase
 {
     public function testLeavesInitialFloatValueUntouched(): void
     {
@@ -47,8 +47,13 @@ class FloatValueTest extends TestCase
         $this->assertTrue($floatValue->lessThan($greaterFloatValue));
     }
 
-    private function floatValue(float $value): FloatValue
+    private function floatValue(float $value): FloatVo
     {
-        return $this->getMockForAbstractClass(FloatValue::class, [$value]);
+        return new class($value) extends FloatVo
+        {
+            protected function validate(float $value): void
+            {
+            }
+        };
     }
 }

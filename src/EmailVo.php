@@ -6,7 +6,7 @@ namespace PhpVo;
 
 use Webmozart\Assert\Assert;
 
-class EmailValue extends StringValue
+class EmailVo extends StringVo
 {
     protected function validate(string $value): void
     {

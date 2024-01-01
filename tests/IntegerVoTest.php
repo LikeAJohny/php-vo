@@ -3,9 +3,9 @@
 namespace PhpVoTests;
 
 use PHPUnit\Framework\TestCase;
-use PhpVo\IntegerValue;
+use PhpVo\IntegerVo;
 
-class IntegerValueTest extends TestCase
+class IntegerVoTest extends TestCase
 {
     public function testLeavesInitialFloatValueUntouched(): void
     {
@@ -47,8 +47,13 @@ class IntegerValueTest extends TestCase
         $this->assertTrue($integerValue->lessThan($greaterIntegerValue));
     }
 
-    private function integerValue(int $value): IntegerValue
+    private function integerValue(int $value): IntegerVo
     {
-        return $this->getMockForAbstractClass(IntegerValue::class, [$value]);
+        return new class($value) extends IntegerVo
+        {
+            protected function validate(int $value): void
+            {
+            }
+        };
     }
 }

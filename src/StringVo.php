@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace PhpVo;
 
-abstract class StringValue
+abstract class StringVo
 {
-    use StringValueTrait;
+    use StringVoTrait;
 
     public function __construct(protected readonly string $value)
     {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PhpVo;
 
-trait FloatValueTrait
+trait FloatVoTrait
 {
     protected readonly float $value;
 
